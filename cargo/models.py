@@ -14,7 +14,6 @@ class Weight(models.Model):
         ordering = ['id']
 
 
-
 class Price(models.Model):
     title = models.CharField(max_length=100, verbose_name='Сумма')
     money = models.IntegerField(blank=False, verbose_name='Широта')
@@ -27,7 +26,7 @@ class Price(models.Model):
     class Meta:
         verbose_name = 'Сумма'
         verbose_name_plural = 'Сумма'
-        ordering = ['id']
+        ordering = ['id']                                   # сортировка
 
 
 class Distance(models.Model):
@@ -44,4 +43,4 @@ class Distance(models.Model):
     class Meta:
         verbose_name = 'Расстояние'
         verbose_name_plural = 'Расстояние'
-        ordering = ['id']
+        ordering = ['id']                                   # сортировка
