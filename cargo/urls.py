@@ -3,6 +3,6 @@ from cargo.views import *
 
 
 urlpatterns = [
-    # path('', index, name='index'),
-    # path('add', dist, name='dist')       
+    path('', index, name='index'),
+    path('add', dist, name='dist')       
 ]

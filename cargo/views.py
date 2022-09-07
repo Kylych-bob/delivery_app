@@ -7,10 +7,8 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse('page found')
-
-
-
+    return render(request, 'cargo/input.html')
+    
 
 def dist(request):
     
@@ -28,9 +26,6 @@ def dist(request):
     point_b = (b1,b2)
 
     res = geodesic(point_a, point_b).miles
-
-
-
 
     # a = int(num1)
     # b = int(num2)
