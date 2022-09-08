@@ -3,7 +3,7 @@ from django.db import models
 
 class Weight(models.Model):
     title = models.CharField(max_length=100, verbose_name='Вес')
-    kilo = models.IntegerField(blank=False, verbose_name='Широта')
+    kilo = models.IntegerField(blank=False, verbose_name='Килограммkilo')
 
     def __str__(self):
         return self.title
@@ -15,8 +15,8 @@ class Weight(models.Model):
 
 
 class Price(models.Model):
-    title = models.CharField(max_length=100, verbose_name='Сумма')
-    money = models.IntegerField(blank=False, verbose_name='Широта')
+    title = models.CharField(max_length=100, verbose_name='Цена')
+    money = models.IntegerField(blank=False, verbose_name='Цена')
     kilo = models.OneToOneField('Weight', on_delete=models.CASCADE, null=True)
     km = models.ForeignKey('Distance', on_delete=models.CASCADE, null=True)
 

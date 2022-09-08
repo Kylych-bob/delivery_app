@@ -2,17 +2,31 @@
 
 {% block content %}
 
-<h1>Addition</h1>
+<h1>Distance</h1>
 <form action="add" method="POST">
     {% csrf_token %}
+    <p> Координаты не должгы быть больше 95</p>
+    Enter Longitude 1: <input type="int" name="a1"><br><br>
+    Enter Longitude 2: <input type="int" name="a2"><br><br>
+    Enter Latitude 1: <input type="int" name="b1"><br><br>
+    Enter Latitude 2: <input type="int" name="b2"><br><br>
 
-    Enter first number: <input type="int" name="a1"><br><br>
-    Enter second number: <input type="int" name="a2"><br><br>
-    Enter second number: <input type="int" name="b1"><br><br>
-    Enter second number: <input type="int" name="b2"><br><br>
+    <p>Enter Weight:</p>
+    <input type="int" name="c"><br><br>
 
-
+    <p>Enter Price:</p>
+    <input type="int" name="d"><br><br>
     <input type="submit">
+
 </form>
 
 {% endblock %}
+
+
+
+
+
+
+
+ 
+ 
